@@ -10,7 +10,11 @@
 
   <body>
     {% include 'navbar.html' %}
-    {% include 'message.html' %}
+    {% if request.user.is_student %}
+      {% include 'message.html' %}
+      {% elif request.user.is_teacher%}
+      {% include 'message.html' %}
+      {% endif %}
 
     <div class='container'>
 

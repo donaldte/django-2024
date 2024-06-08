@@ -30,7 +30,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'produits', # Ajout de l'application produits
+    'compte', # Ajout de l'application compte
 ]
+
+# DECLARE AUTH_USER_MODEL
+AUTH_USER_MODEL = 'compte.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
